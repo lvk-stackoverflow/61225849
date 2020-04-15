@@ -2,6 +2,10 @@
 using System.IO;
 using System.Reflection;
 
+#if RELEASE
+Error: Hardcoded assumptions only work with full rebuild in debug
+#endif
+
 namespace AssemblyLoadExample
 {
     internal class Program
